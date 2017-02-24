@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- jQuery CDN resource identifier -->
+    <script src="js/order.js"></script>
+    <!-- local javascript file deisgnation  -->
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- order.css local css document -->
+    <link rel="stylesheet" href="css/order.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">Galvanize Delivers</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="order.html">Order Delivery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h4 class="menu">Menu</h4>
+    <div class="row">
+        <!-- OUter row that encloses everything  -->
+        <div class="col s6 m6 l6">
+            <!-- left column div 6 divs wide encloses all cards -->
+            <div class="row">
+                <!--  3 div column per card -->
+                <div class="col s6 m6 l6">
+                    <div class="medium center-align card item-one">
+                        <div class="card-image">
+                            <img src="img/burger.jpg">
+                        </div>
+                        <div class="card-content">
+                            <div class="section">
+                                <h5 class="item-one name">Royale with Cheese</h5>
+                                <p class="item-one price">$8.99</p>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+                        <a class="waves-effect light-blue lighten-1 btn" id="btn1" data-price="$8.99" data-name="Royale with Cheese">ADD TO ORDER</a>
+                    </div>
+                </div>
+                <!--  3 div column per card -->
+                <div class="col s6 m6 l6">
+                    <div class="medium center-align card item-two">
+                        <div class="card-image">
+                            <img src="img/pizza.jpg">
+                        </div>
+                        <div class="card-content">
+                            <div class="section">
+                                <h5 class="item-two name">Arugula Pie</h5>
+                                <p class="item-two price">$11.99</p>
+                            </div>
+                            <div class="divider">
+                            </div>
+                        </div>
+                        <a class="medium waves-effect light-blue lighten-1 btn" id="btn2" data-price="$11.99" data-name>ADD TO ORDER</a>
+                    </div>
+                </div>
+            </div>
+            <!-- row two of Menu-Cards -->
+            <div class="row">
+                <!-- first card inside 3 div column -->
+                <div class="col s6 m6 l6">
+                    <div class="medium center-align card item-three">
+                        <div class="card-image">
+                            <img src="img/ribs.jpg">
+                        </div>
+                        <div class="card-content">
+                            <div class="section">
+                                <h5 class="item-three name">Smoked Swine</h5>
+                                <p class="item-three price">$14.99</p>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+                        <a class="waves-effect light-blue lighten-1 btn" id="btn3">ADD TO ORDER</a>
+                    </div>
+                </div>
+                <div class="col s6 m6 l6">
+                    <div class="medium center-align card item-four">
+                        <div class="card-image">
+                            <img src="img/ice_cream.jpg">
+                        </div>
+                        <div class="card-content">
+                            <div class="section">
+                                <h5 class="item-four name">Ice Cream Biscuit</h5>
+                                <p class="item-four price">$7.99</p>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+                        <a class="waves-effect light-blue lighten-1 btn" id="btn4">ADD TO ORDER</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+            <!-- Order details in 6 div wide column -->
+                <div class="col sm6 m6 l6 right-column">
+
+                    <h4>Order</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th data-field="name">Item Name</th>
+                                <th data-field="price">Item Price</th>
+                                <th data-field="tax">Tax</th>
+                                <th data-field="sub-total">Subtotal</th>
+                            </tr>
+                        </thead>
+
+
+                        <tbody id="my-order">
+                            <!-- insert order html here -->
+                        </tbody>
+
+
+                        <tfoot>
+                            <tr class="subtotal">
+                                <td>Subtotal</td>
+                                <td></td>
+                                <td></td>
+                                <td id="subtotal-total"></td>
+                                <div class="divider"></div>
+                            </tr>
+                            <tr class="tax">
+                                <td>Tax</td>
+                                <td></td>
+                                <td></td>
+                                <td id="tax-total"></td>
+                            </tr>
+                            <tr class="total">
+                                <td>Total</td>
+                                <td></td>
+                                <td></td>
+                                <td id="total-total"></td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </div>
+            </div>
+
+
+
+
+    <footer class="page-footer light-blue lighten-1">
+        <div class="row container">
+            <div class="col s12 m4">
+                <h5 class="white-text">Galvanize Delivers</h5>
+                <p class="grey-text text-lighten-4">Fine dining, delivered</p>
+            </div>
+
+            <div class="col s12 m4 footer-links">
+                <ul>
+                    <li><a class="white-text" href="index.html">Home</a></li>
+                    <li><a class="white-text" href="order.html">Order</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            © 2016 Galvanize Delivers
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

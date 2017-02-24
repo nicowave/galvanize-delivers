@@ -1,0 +1,18 @@
+/*index.css*/
+
+.row {
+  padding: 0 20px 0 20px;
+}
+
+.brand-logo {
+  margin-left: 20px;
+}
+
+.footer-copyright {
+  padding-left: 20px;
+}
+
+#index-banner {
+  background-image: url('img/hero.jpg');
+  text-align: left;
+}

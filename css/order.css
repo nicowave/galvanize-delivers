@@ -1,0 +1,61 @@
+/* 'order.css' */
+
+
+.menu {
+  padding-left: 40px;
+}
+
+.right-column {
+  float: right;
+}
+
+.row {
+  display: block;
+}
+
+
+a .btn {
+  padding-bottom: 20px;
+}
+
+/*tr .subtotal td {
+  font-size: 2.0em;
+  background-color: grey;
+}
+
+tr .tax td {
+    font-size: 2.0em;
+    background-color: salmon;
+}
+
+tr .total td{
+  font-size: 2.0em;
+  background-color: lightgreen;
+}*/
+
+
+.brand-logo {
+  margin-left: 20px;
+}
+
+.card {
+ clear: both;
+ padding-bottom: 10px;
+}
+
+.card-content {
+  clear: both;
+}
+
+.waves-effect .btn {
+    width: 100%;
+}
+
+.divider {
+  margin-bottom: 10px;
+}
+
+.order-container {
+  float: right;
+
+}
